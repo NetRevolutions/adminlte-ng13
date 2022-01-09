@@ -32,6 +32,7 @@ import {SubMenuComponent} from './pages/main-menu/sub-menu/sub-menu.component';
 import {MenuItemComponent} from './components/menu-item/menu-item.component';
 import {DropdownComponent} from './components/dropdown/dropdown.component';
 import {DropdownMenuComponent} from './components/dropdown/dropdown-menu/dropdown-menu.component';
+import { TranslocoRootModule } from './transloco-root.module';
 
 registerLocaleData(localeEn, 'en-EN');
 
@@ -71,7 +72,8 @@ registerLocaleData(localeEn, 'en-EN');
             timeOut: 3000,
             positionClass: 'toast-top-right',
             preventDuplicates: true
-        })
+        }),
+        TranslocoRootModule
     ],
     providers: [],
     bootstrap: [AppComponent]
